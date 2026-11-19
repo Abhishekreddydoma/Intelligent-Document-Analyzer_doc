@@ -1,0 +1,92 @@
+@import "tailwindcss";
+
+:root {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: #493323;
+  background-color: #FBF3EA;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #FBF3EA;
+  color: #493323;
+  min-height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* -------------------------------------------------------------
+ * Sunset Orange + Minimal Neumorphism System
+ * Palette:
+ *   Main background:       #FBF3EA
+ *   Card background:       #FFFDFC
+ *   Primary orange:        #DC8043
+ *   Secondary orange:      #F2BD78
+ *   Dark text:             #493323
+ *   Secondary text:        #8C7767
+ *   Light orange bg:       #F8E5D2
+ *   Success green:         #548A68
+ *   Error red:             #C75B50
+ *   Border:                #E9D9C9
+ *
+ * Shadows:
+ *   Light shadow: -5px -5px 12px #FFFFFF
+ *   Dark shadow:   5px  5px 12px #E8DCCD
+ * ------------------------------------------------------------- */
+
+.neu-card {
+  background-color: #FFFDFC;
+  box-shadow: 5px 5px 12px #E8DCCD, -5px -5px 12px #FFFFFF;
+  border: 1px solid #E9D9C9;
+}
+
+.neu-card-sm {
+  background-color: #FFFDFC;
+  box-shadow: 3px 3px 8px #E8DCCD, -3px -3px 8px #FFFFFF;
+  border: 1px solid #E9D9C9;
+}
+
+.neu-inset {
+  background-color: #F8E5D2;
+  box-shadow: inset 4px 4px 8px #E8DCCD, inset -4px -4px 8px #FFFFFF;
+}
+
+.neu-inset-subtle {
+  background-color: #FBF3EA;
+  box-shadow: inset 3px 3px 6px #E8DCCD, inset -3px -3px 6px #FFFFFF;
+}
+
+.neu-btn-primary {
+  background-color: #DC8043;
+  color: #FFFFFF;
+  box-shadow: 3px 3px 8px #E8DCCD, -3px -3px 8px #FFFFFF;
+  transition: all 0.2s ease;
+}
+
+.neu-btn-primary:hover {
+  background-color: #C87137;
+  box-shadow: 2px 2px 5px #E8DCCD, -2px -2px 5px #FFFFFF;
+}
+
+.neu-btn-primary:active {
+  box-shadow: inset 2px 2px 5px rgba(73, 51, 35, 0.4);
+}
+
+.neu-btn-secondary {
+  background-color: #F2BD78;
+  color: #493323;
+  box-shadow: 3px 3px 8px #E8DCCD, -3px -3px 8px #FFFFFF;
+  border: 1px solid #E9D9C9;
+  transition: all 0.2s ease;
+}
+
+.neu-btn-secondary:hover {
+  background-color: #EDB368;
+}
+
+.neu-btn-secondary:active {
+  box-shadow: inset 2px 2px 5px rgba(73, 51, 35, 0.25);
+}
